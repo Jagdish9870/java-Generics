@@ -1,6 +1,6 @@
 package BoundedTypeParams;
 
-class  Bag<T extends Number>  // now you can only extend numbers  it is known as bounded type params
+class  Bag<T extends Number>  // now you can only extend numbers it is known as bounded type params
 {
     private T value;
     public T getValue(){

@@ -34,6 +34,7 @@ class dibba2{
 public class genericConstructor {
     public static void main(String[] args) {
         dibba2 d= new dibba2(22);
+        System.out.println(d);
        
 
         

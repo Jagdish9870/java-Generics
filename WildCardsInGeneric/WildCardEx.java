@@ -1,7 +1,6 @@
 package WildCardsInGeneric;
-
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 // wild card means ? and it is used in case of read only
 public class WildCardEx {
     // public void printArray(ArrayList<?> list){
@@ -12,7 +11,7 @@ public class WildCardEx {
     // }
 
     // writing method of generic type
-    public static double sum(ArrayList<? extends Number> numbers){
+    public static double sum(List<Integer> numbers){
         double sum=0;
         for(Number num: numbers){
             sum += num.doubleValue();
@@ -21,7 +20,7 @@ public class WildCardEx {
     }
     public static void main(String[] args) {
         System.out.println(Arrays.asList(1,2,5,6));
-        
+        System.out.println(sum(Arrays.asList(1,2,5,6)));
     }
     
 }
